@@ -1,0 +1,149 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Lab3</Name>
+    <RootNamespace>Lab3</RootNamespace>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>3f2abe73-d082-4e84-baf9-f161372b5d06</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>server.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>5000</NodejsPort>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="src\components\form-input\form-input.component.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\header\header.component.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="public\favicon.ico" />
+    <Content Include="public\index.html" />
+    <Content Include="public\logo192.png" />
+    <Content Include="public\logo512.png" />
+    <Content Include="public\manifest.json" />
+    <Content Include="public\robots.txt" />
+    <Content Include="server.js" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="src\App.css" />
+    <Content Include="src\App.js" />
+    <Content Include="src\App.test.js" />
+    <Content Include="src\components\ingredient-box\ingredient-box.component.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\menu\menu.component.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\recipe-add\recipe-add.component.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\recipe-edit\recipe-edit.component.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\recipe-home-item\recipe-home-item.component.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\recipe-table\recipe-table.component.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\table-home\table-home.component.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\index.css" />
+    <Content Include="src\index.js" />
+    <Content Include="src\logo.svg" />
+    <Content Include="recipes.json">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\pages\homepage\homepage.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\pages\menu\menu.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\pages\recipes\add.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\pages\recipes\edit.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\reportWebVitals.js" />
+    <Content Include="src\setupTests.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\components\" />
+    <Folder Include="src\components\header\" />
+    <Folder Include="public\" />
+    <Folder Include="src\" />
+    <Folder Include="src\components\form-input\" />
+    <Folder Include="src\components\ingredient-box\" />
+    <Folder Include="src\components\menu\" />
+    <Folder Include="src\components\recipe-table\" />
+    <Folder Include="src\components\recipe-edit\" />
+    <Folder Include="src\components\recipe-add\" />
+    <Folder Include="src\components\table-home\" />
+    <Folder Include="src\components\recipe-home-item\" />
+    <Folder Include="src\pages\" />
+    <Folder Include="src\pages\homepage\" />
+    <Folder Include="src\pages\menu\" />
+    <Folder Include="src\pages\recipes\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
