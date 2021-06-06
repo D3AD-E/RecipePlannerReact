@@ -1,9 +1,15 @@
-# RecipePlannerMVC
+# RecipePlannerReact
 
 >University course project
 
-    Please write simple Recipe Planner application using MVC NET 5.0
-    Data should be stored in text files in selected folder (format explained at the end)
+
+    Please write simple Recipe Planner application using React
+    Data should be stored in text files in selected folder on the server (format explained at the end)
+    Application should be uploaded to task3 folder of the student's gitlab projct (the same which was used in task1 and task2)
+    Student must not publish files which are result of compilation
+    Student should implement both client and server using JavaScript
+    Application should use the same server (so only one port occupied) for serving static (react) and dynamic (data in rest) content
+
 
 Main page
 
